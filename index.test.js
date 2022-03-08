@@ -19,4 +19,12 @@ describe("rock, paper, scissors", () => {
 
       expect(result).toBe("right");
   });
+  it("should say left wins for scissors vs. papers", () => {
+      const left = "scissors";
+      const right = "paper";
+
+      const result = rps(left, right);
+
+      expect(result).toBe("left");
+  })
 });
